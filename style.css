@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    width: 100vw;
+}
+
+a > img{
+    width: 7rem;
+    height: auto;
+    margin: 1rem 0 0 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.user-profiles{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+.user:hover{
+    outline-color: rgb(255, 0, 0);
+    outline-style: solid;
+    transition: .1s;
+    color: rgb(255, 255, 255);
+    transition: .1s;
+}
+
+.user{
+    width: 10rem;
+    height: 10rem;
+    margin: 3rem 1rem 0 1rem;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.user-1{
+    background-color: cornflowerblue;
+}
+
+.user-2{
+    background-color: rgb(236, 100, 37);
+}
+
+.user-3{
+    background-color: rgb(42, 199, 28);
+}
+
+.user-4{
+    background-color: rgb(176, 53, 187);
+}
+
+.add-profile{
+    background-color: darkgray;
+    border-radius: 50%;
+}
+
+.add-profile:hover{
+    background-color: #fff;
+    transition: 1s;
+    outline: none;
+}
+
+.icon-profile{
+    width: 10rem;
+    height: 10rem;
+}
+
+main input{
+    padding: 1rem;
+    margin-top: 4rem;
+    background-color: black;
+    border: 1px solid gray;
+    cursor: pointer;
+    color: dimgrey;
+    font-size: 1rem;
+}
+
+main input:hover{
+    color: #fff;
+    border-color: #fff;
+    transition: .5s;
+}
+
+@media (max-width: 1000px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 750px){
+    main{
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    .user-profiles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        height: max-content;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    a > img{
+        width: 15rem;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (max-height: 411px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-height: 360px){
+    html{
+        font-size: 40%;
+    }
+}
